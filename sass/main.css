@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.hero  {
+      width: 1200px;
+      padding-top: 125px;
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+.hero__background  {
+       margin-left: auto;
+      display: block;
+}
+
+.hero__imgbox  {
+      position: relative;
+}
+
+.hero__picture  {
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+.hero__title  {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+@media screen and  (max-width: 767px) {
+  .hero__title  {
+    font-size: 20px;
+    line-height: 136%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
