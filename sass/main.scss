@@ -13,6 +13,19 @@ ul {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -27,24 +40,62 @@ img {
   padding-right: 15px;
   @media screen and(max-width: 767px) {
     padding-top: 50.47px;
-    padding-bottom: 30px;
+    padding-bottom: 66.15px;
+  }
+
+  @media screen and(min-width: 768px) {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 92.5px;
   }
 }
 
 .hero__background {
-  margin-left: auto;
-  display: block;
+  @media screen and(max-width: 767px) {
+    width: 208px;
+    height: 148.85px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 375.75px;
+    height: 268.9px;
+  }
+  width: 841.55px;
+  height: 602.24px;
 }
 
 .hero__imgbox {
   position: relative;
+  @media screen and(max-width: 767px) {
+    margin-top: 30px;
+  }
+  @media screen and(min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100%, 30%);
+    width: 375.75px;
+    height: 320.64px;
+  }
 }
 
 .hero__picture {
   position: absolute;
   top: 0;
   left: 0;
-  // transform: translate(60%,  -6%);
+  transform: translate(12%, -5%);
+
+  @media screen and(max-width: 767px) {
+    width: 177.75px;
+    height: 177.5px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 321.11px;
+    height: 320.64px;
+  }
+  width: 719.17px;
+  height: 718.14px;
 }
 
 .hero__title {
@@ -52,6 +103,12 @@ img {
     font-size: 20px;
     line-height: 136%;
     margin-bottom: 30px;
+  }
+
+  @media screen and(min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+    width: 332px;
   }
 
   font-weight: 800;
@@ -64,35 +121,110 @@ img {
 }
 
 .hero__text1 {
-  @media screen and(max-width: 767px) {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 
-    letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
 
-    color: #b9b9b9;
-  }
+  color: #b9b9b9;
 }
 
 .hero__text2 {
-  @media screen and(max-width: 767px) {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.08em;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
 
-    color: #111518;
-  }
+  color: #111518;
 }
 
 .hero__text3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+
+  color: #ff6b09;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  @media screen and(max-width: 767px) {
+    width: 260px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 259px;
+  }
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: #ff6b09;
+  color: #ffffff;
+  padding: 14px 1px;
+  border: none;
+}
+
+.advantages {
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and(max-width: 767px) {
+    padding-top: 30px;
+  }
+}
+
+.advantages__item {
+  position: relative;
   @media screen and(max-width: 767px) {
     font-weight: bold;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
+
     letter-spacing: 0.08em;
 
-    color: #ff6b09;
+    color: #111518;
+    margin-left: 68.82px;
+    margin-bottom: 30px;
   }
+}
+
+.advantages__item1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -68.82px;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-image: url(../images/icon-svg.svg);
+  width: 58.82px;
+  height: 60px;
+}
+
+.advantages__item2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -68.82px;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-image: url(../images/icon-svg2.svg);
+  width: 58.82px;
+  height: 60px;
+}
+
+.advantages__item3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -68.82px;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-image: url(../images/icon-svg.svg);
+  width: 58.82px;
+  height: 60px;
 }
