@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .hero  {
   width: 1200px;
   padding-top: 125px;
@@ -18,20 +20,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  //       transform: translate(60%,  -6%);
 }
 
 .hero__title  {
-  @media screen and  (max-width: 767px) {
-    font-size: 20px;
-    line-height: 136%;
-  }
-
   font-weight: 800;
   font-size: 58px;
   line-height: 130%;
-
   letter-spacing: 0.03em;
-
   color: red;
 }
+
+@media screen and  (max-width: 767px) {
+  .hero__title  {
+    font-size: 20px;
+    line-height: 136%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
