@@ -106,6 +106,7 @@ img {
   .hero__imgbox {
     position: relative;
     margin-top: 30px;
+    margin-left: 36px;
   }
 }
 
@@ -179,6 +180,7 @@ img {
   .hero__title {
     font-size: 26px;
     margin-bottom: 30px;
+    width: 320px;
   }
 }
 
@@ -187,6 +189,7 @@ img {
     font-size: 58px;
     line-height: 130%;
     margin-bottom: 24px;
+    width: 642px;
   }
 }
 
@@ -249,6 +252,16 @@ img {
 @media screen and (max-width: 767px) {
   .hero__button {
     width: 260px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background-color: #ff6b09;
+    color: #ffffff;
+    padding: 14px 1px;
+    border: none;
+    margin-left: 10px;
   }
 }
 
@@ -279,6 +292,7 @@ img {
 @media screen and (max-width: 767px) {
   .advantages {
     padding-top: 30px;
+    margin-left: 36px;
   }
 }
 
@@ -290,11 +304,12 @@ img {
 
 .advantages__item {
   position: relative;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
   .advantages__item {
-    font-weight: bold;
+    width: 146px;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.08em;
@@ -306,8 +321,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .advantages__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 42px);
-        flex-basis: calc(100% / 3 - 42px);
     margin-left: 89.82px;
   }
 }
@@ -316,6 +329,9 @@ img {
   .advantages__item {
     font-size: 20px;
     line-height: 164.9%;
+    margin-left: 82px;
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
   }
 }
 
@@ -335,8 +351,9 @@ img {
 @media screen and (min-width: 1280px) {
   .advantages__item1::before {
     background-image: url(../images/icon-svg-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
@@ -356,8 +373,9 @@ img {
 @media screen and (min-width: 1280px) {
   .advantages__item2::before {
     background-image: url(../images/icon-svg2-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
@@ -377,8 +395,9 @@ img {
 @media screen and (min-width: 1280px) {
   .advantages__item3::before {
     background-image: url(../images/icon-svg-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
@@ -388,6 +407,12 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-left: -21px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__list {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

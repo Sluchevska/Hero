@@ -91,6 +91,7 @@ img {
   @media screen and(max-width: 767px) {
     position: relative;
     margin-top: 30px;
+    margin-left: 36px;
   }
   @media screen and(min-width: 768px) {
     position: absolute;
@@ -138,13 +139,14 @@ img {
   @media screen and(min-width: 768px) {
     font-size: 26px;
     margin-bottom: 30px;
-    // width: 332px;
+    width: 320px;
   }
 
   @media screen and(min-width: 1280px) {
     font-size: 58px;
     line-height: 130%;
     margin-bottom: 24px;
+    width: 642px;
   }
 
   font-weight: 800;
@@ -208,6 +210,16 @@ img {
 .hero__button {
   @media screen and(max-width: 767px) {
     width: 260px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background-color: #ff6b09;
+    color: #ffffff;
+    padding: 14px 1px;
+    border: none;
+    margin-left: 10px;
   }
   @media screen and(min-width: 768px) {
     width: 259px;
@@ -232,6 +244,7 @@ img {
 .advantages {
   @media screen and(max-width: 767px) {
     padding-top: 30px;
+    margin-left: 36px;
   }
   @media screen and(min-width: 1280px) {
     padding-top: 96.5px;
@@ -240,8 +253,9 @@ img {
 
 .advantages__item {
   position: relative;
+  font-weight: bold;
   @media screen and(max-width: 767px) {
-    font-weight: bold;
+    width: 146px;
     font-size: 14px;
     line-height: 20px;
 
@@ -252,12 +266,15 @@ img {
     margin-bottom: 30px;
   }
   @media screen and(min-width: 768px) {
-    flex-basis: calc(100% / 3 - 42px);
+    // flex-basis: calc(100% / 3 - 42px);
     margin-left: 89.82px;
   }
   @media screen and(min-width: 1280px) {
     font-size: 20px;
     line-height: 164.9%;
+    // width: 448px;
+    margin-left: 82px;
+    flex-basis: calc(100% / 3);
   }
 }
 
@@ -273,8 +290,9 @@ img {
   height: 62px;
   @media screen and(min-width: 1280px) {
     background-image: url(../images/icon-svg-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
@@ -290,8 +308,9 @@ img {
   height: 62px;
   @media screen and(min-width: 1280px) {
     background-image: url(../images/icon-svg2-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
@@ -307,14 +326,24 @@ img {
   height: 62px;
   @media screen and(min-width: 1280px) {
     background-image: url(../images/icon-svg-1280.svg);
-    width: 100px;
-    height: 102px;
+    width: 101px;
+    height: 104px;
+    left: -85px;
   }
 }
 
 .advantages__list {
+  // @media screen and(max-width: 767px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+
   @media screen and(min-width: 768px) {
     display: flex;
     margin-left: -21px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    margin-left: 0;
   }
 }
