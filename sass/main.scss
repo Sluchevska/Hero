@@ -1,27 +1,27 @@
-.hero  {
+.hero {
   width: 1200px;
   padding-top: 125px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.hero__background  {
+.hero__background {
   margin-left: auto;
   display: block;
 }
 
-.hero__imgbox  {
+.hero__imgbox {
   position: relative;
 }
 
-.hero__picture  {
+.hero__picture {
   position: absolute;
   top: 0;
   left: 0;
-  //       transform: translate(60%,  -6%);
+  // transform: translate(60%,  -6%);
 }
 
-.hero__title  {
+.hero__title {
   @media screen and  (max-width: 767px) {
     font-size: 20px;
     line-height: 136%;
